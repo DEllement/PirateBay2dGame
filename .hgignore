@@ -1,0 +1,6 @@
+syntax: glob
+*.obj
+proj.win32/Debug.win32/
+proj.win32/Release.win32/
+cocos2d/cocos/platform/android/java/bin/
+cocos2d\cocos\platform\android\java\res\.gitignore

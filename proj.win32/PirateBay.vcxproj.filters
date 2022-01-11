@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Controller">
+      <UniqueIdentifier>{257700d7-bfb7-4ccf-9cc9-f7921b1dac9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\components">
+      <UniqueIdentifier>{5307324e-eeac-4213-9cc1-d924f86db5be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\systems">
+      <UniqueIdentifier>{26271a22-68c3-4e7c-a9a7-0c5a3241c095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\utils">
+      <UniqueIdentifier>{26091208-af43-441b-86eb-497723dc9557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\systems\rendering">
+      <UniqueIdentifier>{002adfdf-f2bb-4752-beb8-b32fd65b43ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\components\visual">
+      <UniqueIdentifier>{657491a0-ad7f-4920-9b5b-bdc4ac01f326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\components\artemis">
+      <UniqueIdentifier>{6857df14-00cc-466c-b387-355f63d69ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\components\_shared">
+      <UniqueIdentifier>{c1f56346-ceb1-42fd-ac38-ad00c694f078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\events">
+      <UniqueIdentifier>{a6609812-6658-406d-a4aa-3a2b9f61ff94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\components\cocos2d-x">
+      <UniqueIdentifier>{ff578fa8-15b1-4a9e-951d-aefe9d62cdf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\systems\logics">
+      <UniqueIdentifier>{6f6f23c4-a1ca-4331-a2eb-d86f6537ba8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\models">
+      <UniqueIdentifier>{1b86f54b-34a6-4538-97e3-f061e241205d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\models\vo">
+      <UniqueIdentifier>{4b2cd3c3-a897-49f7-92ad-23b3762b777f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\managers">
+      <UniqueIdentifier>{23319fc9-a0f7-449d-9709-13f699e69b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\views">
+      <UniqueIdentifier>{42f0d1a8-7f65-4eaf-a4c1-88dc6389474a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Container.cpp">
+      <Filter>Classes\components\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ArtemisWorld.cpp">
+      <Filter>Classes\components\artemis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TrigLUT.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Utils.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Position.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileDistributer.cpp">
+      <Filter>Classes\components\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileBoard.cpp">
+      <Filter>Classes\components\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileRope.cpp">
+      <Filter>Classes\components\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Boat.cpp">
+      <Filter>Classes\components\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelData.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HudRenderSystem.cpp">
+      <Filter>Classes\systems\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EconomicAsset.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Item.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GridRenderSystem.cpp">
+      <Filter>Classes\systems\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Explosion.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GridElement.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Constants.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SeaPath.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRippleSprite.cpp">
+      <Filter>Classes\components\cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GridMatrix.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WaterRenderSystem.cpp">
+      <Filter>Classes\systems\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GridEvent.cpp">
+      <Filter>Classes\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DijkstraAlgorithm.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EnemyData.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Kraken.cpp">
+      <Filter>Classes\components\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectiveData.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PlayerData.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ShipData.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Motion.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RandomMovingSeaPathSystem.cpp">
+      <Filter>Classes\systems\logics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EnemiesSystem.cpp">
+      <Filter>Classes\systems\logics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectiveSystem.cpp">
+      <Filter>Classes\systems\logics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DragAndDropSystem.cpp">
+      <Filter>Classes\systems\logics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GridSystem.cpp">
+      <Filter>Classes\systems\logics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MovementSystem.cpp">
+      <Filter>Classes\systems\logics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ShipSystem.cpp">
+      <Filter>Classes\systems\logics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Vortex.cpp">
+      <Filter>Classes\components\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\VortexData.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PopUpInfos.cpp">
+      <Filter>Classes\models\vo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelFailedPopUpView.cpp">
+      <Filter>Classes\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelSuccessPopUpView.cpp">
+      <Filter>Classes\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectivePopUpView.cpp">
+      <Filter>Classes\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SpriteContainer.cpp">
+      <Filter>Classes\components\cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DragIndicator.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TargetMark.cpp">
+      <Filter>Classes\components\_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EntityFactory.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PopUpFactory.cpp" />
+    <ClCompile Include="..\Classes\PopUpViewBase.cpp" />
+    <ClCompile Include="..\Classes\ObjectivePopUpInfos.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Container.h">
+      <Filter>Classes\components\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ArtemisWorld.h">
+      <Filter>Classes\components\artemis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TrigLUT.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Position.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileDistributer.h">
+      <Filter>Classes\components\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileBoard.h">
+      <Filter>Classes\components\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileRope.h">
+      <Filter>Classes\components\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Boat.h">
+      <Filter>Classes\components\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelData.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HudRenderSystem.h">
+      <Filter>Classes\systems\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EconomicAsset.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Item.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GridRenderSystem.h">
+      <Filter>Classes\systems\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Explosion.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GridElement.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Constants.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SeaPath.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCRippleSprite.h">
+      <Filter>Classes\components\cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GridMatrix.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WaterRenderSystem.h">
+      <Filter>Classes\systems\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GridEvent.h">
+      <Filter>Classes\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Array2D.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DijkstraAlgorithm.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnemyData.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Kraken.h">
+      <Filter>Classes\components\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectiveData.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PlayerData.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ShipData.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Motion.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RandomMovingSeaPathSystem.h">
+      <Filter>Classes\systems\logics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnemiesSystem.h">
+      <Filter>Classes\systems\logics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectiveSystem.h">
+      <Filter>Classes\systems\logics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragAndDropSystem.h">
+      <Filter>Classes\systems\logics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GridSystem.h">
+      <Filter>Classes\systems\logics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MovementSystem.h">
+      <Filter>Classes\systems\logics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ShipSystem.h">
+      <Filter>Classes\systems\logics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Vortex.h">
+      <Filter>Classes\components\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\VortexData.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PopUpInfos.h">
+      <Filter>Classes\models\vo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUIManager.h">
+      <Filter>Classes\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelFailedPopUpView.h">
+      <Filter>Classes\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelSuccessPopUpView.h">
+      <Filter>Classes\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectivePopUpView.h">
+      <Filter>Classes\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SpriteContainer.h">
+      <Filter>Classes\components\cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragIndicator.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TargetMark.h">
+      <Filter>Classes\components\_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EntityFactory.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PopUpFactory.h" />
+    <ClInclude Include="..\Classes\PopUpViewBase.h" />
+    <ClInclude Include="..\Classes\ObjectivePopUpInfos.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\Game.inl">
+      <Filter>Classes</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

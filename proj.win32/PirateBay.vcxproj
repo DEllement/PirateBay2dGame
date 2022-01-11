@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>PirateBay</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\EMpiRE\Documents\Works\_SDKs\Artemis-Cpp-master\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libArtemis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;libcocos2d.lib;libArtemis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\Users\EMpiRE\Documents\Works\PirateBay\Resources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\CCRippleSprite.cpp" />
+    <ClCompile Include="..\Classes\Constants.cpp" />
+    <ClCompile Include="..\Classes\DijkstraAlgorithm.cpp" />
+    <ClCompile Include="..\Classes\EnemiesSystem.cpp" />
+    <ClCompile Include="..\Classes\Game.cpp" />
+    <ClCompile Include="..\Classes\Boat.cpp" />
+    <ClCompile Include="..\Classes\Container.cpp" />
+    <ClCompile Include="..\Classes\LevelData.cpp" />
+    <ClCompile Include="..\Classes\ArtemisWorld.cpp" />
+    <ClCompile Include="..\Classes\LevelFailedPopUpView.cpp" />
+    <ClCompile Include="..\Classes\ObjectivePopUpView.cpp" />
+    <ClCompile Include="..\Classes\ObjectiveSystem.cpp" />
+    <ClCompile Include="..\Classes\PlayerData.cpp" />
+    <ClCompile Include="..\Classes\TrigLUT.cpp" />
+    <ClCompile Include="..\Classes\Utils.cpp" />
+    <ClCompile Include="..\Classes\EconomicAsset.cpp" />
+    <ClCompile Include="..\Classes\EntityFactory.cpp" />
+    <ClCompile Include="..\Classes\HudRenderSystem.cpp" />
+    <ClCompile Include="..\Classes\Item.cpp" />
+    <ClCompile Include="..\Classes\Explosion.cpp" />
+    <ClCompile Include="..\Classes\GridElement.cpp" />
+    <ClCompile Include="..\Classes\GridRenderSystem.cpp" />
+    <ClCompile Include="..\Classes\GridSystem.cpp" />
+    <ClCompile Include="..\Classes\DragAndDropSystem.cpp" />
+    <ClCompile Include="..\Classes\GridEvent.cpp" />
+    <ClCompile Include="..\Classes\GridMatrix.cpp" />
+    <ClCompile Include="..\Classes\EnemyData.cpp" />
+    <ClCompile Include="..\Classes\Kraken.cpp" />
+    <ClCompile Include="..\Classes\DragIndicator.cpp" />
+    <ClCompile Include="..\Classes\LevelSuccessPopUpView.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\Classes\TileDistributer.cpp" />
+    <ClCompile Include="..\Classes\TileRope.cpp" />
+    <ClCompile Include="..\Classes\TileBoard.cpp" />
+    <ClCompile Include="..\Classes\MovementSystem.cpp" />
+    <ClCompile Include="..\Classes\Position.cpp" />
+    <ClCompile Include="..\Classes\SeaPath.cpp" />
+    <ClCompile Include="..\Classes\WaterRenderSystem.cpp" />
+    <ClCompile Include="..\Classes\ShipSystem.cpp" />
+    <ClCompile Include="..\Classes\ObjectiveData.cpp" />
+    <ClCompile Include="..\Classes\ShipData.cpp" />
+    <ClCompile Include="..\Classes\Motion.cpp" />
+    <ClCompile Include="..\Classes\RandomMovingSeaPathSystem.cpp" />
+    <ClCompile Include="..\Classes\Vortex.cpp" />
+    <ClCompile Include="..\Classes\VortexData.cpp" />
+    <ClCompile Include="..\Classes\PopUpInfos.cpp" />
+    <ClCompile Include="..\Classes\SpriteContainer.cpp" />
+    <ClCompile Include="..\Classes\TargetMark.cpp" />
+    <ClCompile Include="..\Classes\PopUpFactory.cpp" />
+    <ClCompile Include="..\Classes\PopUpViewBase.cpp" />
+    <ClCompile Include="..\Classes\ObjectivePopUpInfos.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Array2D.h" />
+    <ClInclude Include="..\Classes\CCRippleSprite.h" />
+    <ClInclude Include="..\Classes\DijkstraAlgorithm.h" />
+    <ClInclude Include="..\Classes\EnemiesSystem.h" />
+    <ClInclude Include="..\Classes\Game.h" />
+    <ClInclude Include="..\Classes\Boat.h" />
+    <ClInclude Include="..\Classes\Container.h" />
+    <ClInclude Include="..\Classes\GUIManager.h" />
+    <ClInclude Include="..\Classes\LevelData.h" />
+    <ClInclude Include="..\Classes\ArtemisWorld.h" />
+    <ClInclude Include="..\Classes\LevelFailedPopUpView.h" />
+    <ClInclude Include="..\Classes\ObjectivePopUpView.h" />
+    <ClInclude Include="..\Classes\ObjectiveSystem.h" />
+    <ClInclude Include="..\Classes\PlayerData.h" />
+    <ClInclude Include="..\Classes\TrigLUT.h" />
+    <ClInclude Include="..\Classes\Utils.h" />
+    <ClInclude Include="..\Classes\Constants.h" />
+    <ClInclude Include="..\Classes\EconomicAsset.h" />
+    <ClInclude Include="..\Classes\EntityFactory.h" />
+    <ClInclude Include="..\Classes\HudRenderSystem.h" />
+    <ClInclude Include="..\Classes\Item.h" />
+    <ClInclude Include="..\Classes\Explosion.h" />
+    <ClInclude Include="..\Classes\GridElement.h" />
+    <ClInclude Include="..\Classes\GridRenderSystem.h" />
+    <ClInclude Include="..\Classes\GridSystem.h" />
+    <ClInclude Include="..\Classes\DragAndDropSystem.h" />
+    <ClInclude Include="..\Classes\GridEvent.h" />
+    <ClInclude Include="..\Classes\GridMatrix.h" />
+    <ClInclude Include="..\Classes\EnemyData.h" />
+    <ClInclude Include="..\Classes\Kraken.h" />
+    <ClInclude Include="..\Classes\DragIndicator.h" />
+    <ClInclude Include="..\Classes\LevelSuccessPopUpView.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="..\Classes\TileDistributer.h" />
+    <ClInclude Include="..\Classes\TileRope.h" />
+    <ClInclude Include="..\Classes\TileBoard.h" />
+    <ClInclude Include="..\Classes\MovementSystem.h" />
+    <ClInclude Include="..\Classes\Position.h" />
+    <ClInclude Include="..\Classes\SeaPath.h" />
+    <ClInclude Include="..\Classes\WaterRenderSystem.h" />
+    <ClInclude Include="..\Classes\ShipSystem.h" />
+    <ClInclude Include="..\Classes\ObjectiveData.h" />
+    <ClInclude Include="..\Classes\ShipData.h" />
+    <ClInclude Include="..\Classes\Motion.h" />
+    <ClInclude Include="..\Classes\RandomMovingSeaPathSystem.h" />
+    <ClInclude Include="..\Classes\Vortex.h" />
+    <ClInclude Include="..\Classes\VortexData.h" />
+    <ClInclude Include="..\Classes\PopUpInfos.h" />
+    <ClInclude Include="..\Classes\SpriteContainer.h" />
+    <ClInclude Include="..\Classes\TargetMark.h" />
+    <ClInclude Include="..\Classes\PopUpFactory.h" />
+    <ClInclude Include="..\Classes\PopUpViewBase.h" />
+    <ClInclude Include="..\Classes\ObjectivePopUpInfos.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\_SDKs\Artemis-Cpp-master\Artemis\Artemis.vcxproj">
+      <Project>{26638cee-3735-4059-b450-d14cd1df7be8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\2d\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\audio\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\Game.inl" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

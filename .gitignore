@@ -1,0 +1,10 @@
+.hg/
+cocos2d/
+proj.android/
+proj.win32/Release.win32/
+proj.win32/Debug.win32/
+proj.win32/.vs/
+proj.wp8-xaml/
+proj.ios_mac/
+AV Logica App Programmer Agreement v.5.docx
+proj.win32/PirateBay.sdf
